@@ -1,0 +1,29 @@
+### User Register
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Administrator",
+    "email": "admin@admin.com",
+    "password": "admin2341"
+}
+
+### Login User
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "admin2341"
+}
+
+### User ALL
+GET http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2MzAyNzUwLCJleHAiOjE3NDYzODkxNTB9.Wou37Wzx__bvfZimjOPHbf121TSZRO02CQnbDpR8p6g
+
+### Get 1 User
+GET http://localhost:3000/api/users/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2MzAyNzUwLCJleHAiOjE3NDYzODkxNTB9.Wou37Wzx__bvfZimjOPHbf121TSZRO02CQnbDpR8p6g
+
